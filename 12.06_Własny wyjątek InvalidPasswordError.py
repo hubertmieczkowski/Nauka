@@ -19,7 +19,7 @@ def ustaw_haslo(haslo):
 
 
 try:
-    ustaw_haslo("abc123")      
-    ustaw_haslo("bezpiecznehaslo")  
+    haslo = input("Podaj hałso: ")      
+    ustaw_haslo(haslo)  
 except InvalidPasswordError as e:
     print("Błąd:", e)
